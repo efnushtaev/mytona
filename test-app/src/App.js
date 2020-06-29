@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import LoginPage from './view/login-page/login-page';
-import MainPage from './view/main-page/main-page';
+import LoginPage from './view/components/login-page/login-page';
+import MainPage from './view/components/main-page/main-page';
 import PhotosPage from './view/photos-page/photos-page';
-import PostsPage from './view/posts-page/posts-page';
-import NavigationBar from './view/navigation-bar/navigation-bar';
+import PostsPage from './view/components/posts-page/posts-page';
+import NavigationBar from './view/components/navigation-bar/navigation-bar';
 import { connect } from 'react-redux';
 
 const App = ({isAuthorized}) => {
