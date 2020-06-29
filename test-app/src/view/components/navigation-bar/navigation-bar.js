@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import {updateAuthorization} from './../../redux/reducers/auth-reducer'
+import {updateAuthorization} from '../../../redux/reducers/auth-reducer'
 
 const NavigationBar = ({isAuthorized, updateAuthorization}) => {
   return (

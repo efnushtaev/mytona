@@ -1,7 +1,6 @@
 import React, {useState, useEffect}  from 'react';
 
 let Paginator = (props) => {
-  debugger
   const {currentPage, onPageChanged, pagesSize, totalItemsCount} = props
   let [portionNumber, setPortionNumber] = useState(1);
   let portionSize = 5;
