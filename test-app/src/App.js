@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 import './App.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import LoginPage from './view/login-page/login-page';
 import MainPage from './view/main-page/main-page';
-import AlbumsPage from './view/albums-page/albums-page';
+import PhotosPage from './view/photos-page/photos-page';
 import PostsPage from './view/posts-page/posts-page';
 import NavigationBar from './view/navigation-bar/navigation-bar';
 import { connect } from 'react-redux';
@@ -17,16 +17,20 @@ const App = ({isAuthorized}) => {
       </div>
       <div>
       <Switch>
-        {isAuthorized 
-          ? <Route path="/albums" render={() => <AlbumsPage/>} />
-          : <Redirect from="/albums" to="/login"/>
-        }
+        <Route path="/login" render={() => <LoginPage/>} />
         {isAuthorized 
           ? <Route path="/posts" render={() => <PostsPage/>} />
           : <Redirect from="/posts" to="/login"/>
         }
-        <Route path="/login" render={() => <LoginPage/>} />
-        <Route exact path="/" render={() => <MainPage/>} />
+        {isAuthorized 
+          ? <Route path="/photos" render={() => <PhotosPage/>} />
+          : <Redirect from="/photos" to="/login"/>
+        }
+        {isAuthorized 
+          ? <Route exact path="/" render={() => <MainPage/>} />
+          : <Redirect from="/" to="/login"/>
+        }
+        
         <Route path="*" render={() => <h1>404</h1>} />
       </Switch>
 
