@@ -15,7 +15,7 @@ const NavigationBar = ({isAuthorized, updateAuthorization}) => {
           <NavLink activeClassName={"active"} className={"nav-link"} to="/posts">Posts</NavLink>
         </li>
         <li>
-          <NavLink activeClassName={"active"} className={"nav-link"} to="/albums">Albums</NavLink>
+          <NavLink activeClassName={"active"} className={"nav-link"} to="/photos">Photos</NavLink>
         </li>
         <li>
           {isAuthorized
