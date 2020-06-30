@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/mytona/static/css/main.5f361e03.chunk.css",
-    "main.js": "/mytona/static/js/main.4f0cf124.chunk.js",
-    "main.js.map": "/mytona/static/js/main.4f0cf124.chunk.js.map",
+    "main.js": "/mytona/static/js/main.94f89c30.chunk.js",
+    "main.js.map": "/mytona/static/js/main.94f89c30.chunk.js.map",
     "runtime-main.js": "/mytona/static/js/runtime-main.b4d58fb2.js",
     "runtime-main.js.map": "/mytona/static/js/runtime-main.b4d58fb2.js.map",
-    "static/js/2.bb1ad720.chunk.js": "/mytona/static/js/2.bb1ad720.chunk.js",
-    "static/js/2.bb1ad720.chunk.js.map": "/mytona/static/js/2.bb1ad720.chunk.js.map",
+    "static/js/2.ff99353e.chunk.js": "/mytona/static/js/2.ff99353e.chunk.js",
+    "static/js/2.ff99353e.chunk.js.map": "/mytona/static/js/2.ff99353e.chunk.js.map",
     "index.html": "/mytona/index.html",
-    "precache-manifest.efbdb0922c9f069c122805b7e540e3bc.js": "/mytona/precache-manifest.efbdb0922c9f069c122805b7e540e3bc.js",
+    "precache-manifest.337a24edfbb5319c11816c6cf1fa215f.js": "/mytona/precache-manifest.337a24edfbb5319c11816c6cf1fa215f.js",
     "service-worker.js": "/mytona/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/mytona/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.bb1ad720.chunk.js.LICENSE.txt": "/mytona/static/js/2.bb1ad720.chunk.js.LICENSE.txt"
+    "static/js/2.ff99353e.chunk.js.LICENSE.txt": "/mytona/static/js/2.ff99353e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b4d58fb2.js",
-    "static/js/2.bb1ad720.chunk.js",
+    "static/js/2.ff99353e.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.4f0cf124.chunk.js"
+    "static/js/main.94f89c30.chunk.js"
   ]
 }
