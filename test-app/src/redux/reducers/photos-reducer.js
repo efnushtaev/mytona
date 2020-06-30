@@ -1,6 +1,6 @@
 import {usersAPI} from "../../data/api";
 
-const SET_PHOTOS = 'phots/SET_USER_EMAIL';
+const SET_PHOTOS = 'photos/SET_USER_EMAIL';
 const IS_FETCHING = 'photos/SET_USER_PASSWORD';
 const ON_CURRENT_PAGE_CHANGED = 'photos/ON_CURRENT_PAGE_CHANGED';
 const SET_PAGES_COUNT = 'photos/SET_PAGES_COUNT';
@@ -14,34 +14,34 @@ let initialState = {
 }
 
 export const photosReducer = (state = initialState, action) => {
-    switch(action.type) {
-        case SET_PHOTOS: {
-            return {
-                ...state,
-                photos: action.payload
-            }
-        }
-        case IS_FETCHING: {
-            return {
-                ...state,
-                isFetching: action.payload
-            }
-        }
-        case ON_CURRENT_PAGE_CHANGED: {
-            return {
-                ...state,
-                currentPage: action.payload
-            }
-        }
-        case SET_PAGES_COUNT: {
-            return {
-                ...state,
-                pagesCount: action.payload
-            }
-        }
-        default:
-            return state
+  switch(action.type) {
+    case SET_PHOTOS: {
+      return {
+        ...state,
+        photos: action.payload
+      }
     }
+    case IS_FETCHING: {
+      return {
+        ...state,
+        isFetching: action.payload
+      }
+    }
+    case ON_CURRENT_PAGE_CHANGED: {
+      return {
+        ...state,
+        currentPage: action.payload
+      }
+    }
+    case SET_PAGES_COUNT: {
+      return {
+        ...state,
+        pagesCount: action.payload
+      }
+    }
+    default:
+      return state
+  }
 }
 
 export const updateFetchingStatus = payload => ({type: IS_FETCHING, payload}) 
