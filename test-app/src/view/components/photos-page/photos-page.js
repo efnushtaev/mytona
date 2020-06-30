@@ -1,9 +1,11 @@
 import React, {useEffect} from 'react';
-import {loadingPhotos, updateFetchingStatus, onCurrentPageChanged} from './../../redux/reducers/photos-reducer';
-import { connect } from 'react-redux';
-import Paginator from '../paginator/paginator';
-import Preloader from '../preloader/preloader';
+import {loadingPhotos, updateFetchingStatus, onCurrentPageChanged} from './../../../redux/reducers/photos-reducer';
+import {connect} from 'react-redux';
+import Paginator from './../../utilities/paginator/paginator';
+import Preloader from './../../utilities/preloader/preloader';
 import PhotosList from './photos-list';
+import {withAuthRedirection} from '../../hoc/withAuthRedirection';
+import {compose} from 'redux';
 
 const PhotosPage = (props) => {
   const {photos, currentPage, pagesSize} = props;
@@ -33,9 +35,9 @@ let mapStateToProps = state => ({
   currentPage: state.photos.currentPage
 })
 
-export default connect(
+export default compose(connect(
   mapStateToProps, {
     loadingPhotos,
     updateFetchingStatus,
     onCurrentPageChanged
-  })(PhotosPage);
+  }),withAuthRedirection)(PhotosPage);

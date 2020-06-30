@@ -1,9 +1,11 @@
 import React, {useEffect} from 'react';
 import {loadingPosts, updateFetchingStatus, onCurrentPageChanged} from '../../../redux/reducers/posts-reducer';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import Paginator from '../../utilities/paginator/paginator';
 import Preloader from '../../utilities/preloader/preloader';
 import PostsTable from './posts-table';
+import {compose} from 'redux';
+import {withAuthRedirection} from './../../hoc/withAuthRedirection'
 
 const PostsPage = (props) => {
   const {posts, currentPage, pagesSize} = props;
@@ -33,9 +35,11 @@ let mapStateToProps = state => ({
   currentPage: state.posts.currentPage
 })
 
-export default connect(
-  mapStateToProps, {
-    loadingPosts,
-    updateFetchingStatus,
-    onCurrentPageChanged
-  })(PostsPage);
+export default 
+
+  compose(connect(
+    mapStateToProps, {
+      loadingPosts,
+      updateFetchingStatus,
+      onCurrentPageChanged
+    }), withAuthRedirection)(PostsPage);

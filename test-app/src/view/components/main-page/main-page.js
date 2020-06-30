@@ -1,4 +1,6 @@
 import React from 'react';
+import {withAuthRedirection} from '../../hoc/withAuthRedirection';
+import {compose} from 'redux';
 
 const MainPage = () => {
   return (
@@ -6,4 +8,4 @@ const MainPage = () => {
   )
 }
 
-export default MainPage
+export default compose(withAuthRedirection)(MainPage)
