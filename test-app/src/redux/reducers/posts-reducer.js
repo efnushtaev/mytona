@@ -52,7 +52,7 @@ export const onCurrentPageChanged = payload => ({type: ON_CURRENT_PAGE_CHANGED, 
 export const loadingPosts = () => async (dispatch) => {
   dispatch(updateFetchingStatus(true))
   let response = await usersAPI.getPosts()
-  debugger
+  
   dispatch(setPagesCount)
   if(response.status === 200) {
     dispatch(updateFetchingStatus(false))

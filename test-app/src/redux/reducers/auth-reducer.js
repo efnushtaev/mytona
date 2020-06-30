@@ -27,7 +27,6 @@ export const authReducer = (state = initialState, action) => {
       }
     }
     case UPDATE_AUTHORZATION: {
-      debugger
       return {
         ...state,
         isAuthorized: action.payload,
@@ -35,7 +34,6 @@ export const authReducer = (state = initialState, action) => {
       }
     }
     case TO_LOGOUT: {
-      debugger
       return {
         ...state,
         email: '',
@@ -54,8 +52,7 @@ export const updateAuthorization = payload => ({type: UPDATE_AUTHORZATION, paylo
 export const onLogout = () => ({type: TO_LOGOUT})
 
 export const onUserDataCheck = (email, password) => dispatch => {
-  const authDataMatchChecking = (defaultAuthData) => {
-    debugger
+  const authDataMatchChecking = (defaultAuthData) => { 
     if(defaultAuthData.LOGIN === email && defaultAuthData.PASSWORD === password) {
       dispatch(updateAuthorization(true))
     } else {
