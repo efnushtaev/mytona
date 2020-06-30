@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import {updateAuthorization} from '../../../redux/reducers/auth-reducer'
+import {onLogout} from '../../../redux/reducers/auth-reducer'
 
-const NavigationBar = ({isAuthorized, updateAuthorization}) => {
+const NavigationBar = ({isAuthorized, onLogout}) => {
   return (
     <div>
       <h4 className={"text-info"}>Efim Nushtaev</h4>
@@ -19,7 +19,7 @@ const NavigationBar = ({isAuthorized, updateAuthorization}) => {
         </li>
         <li>
           {isAuthorized
-            ? <button className={"btn btn-link nav-link border-left text-dark"} onClick={() => updateAuthorization(false)}>Logout</button>
+            ? <button className={"btn btn-link nav-link border-left text-dark"} onClick={() => onLogout()}>Logout</button>
             : <NavLink activeClassName={"active"} className={"nav-link border-left"} to="/login">Login</NavLink>
           }
         </li>
@@ -32,4 +32,4 @@ let mapStateToProps = (state) => ({
   isAuthorized: state.auth.isAuthorized
 })
 
-export default connect(mapStateToProps, {updateAuthorization})(NavigationBar)
+export default connect(mapStateToProps, {onLogout})(NavigationBar)

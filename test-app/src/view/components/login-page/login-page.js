@@ -6,15 +6,18 @@ import LoginForm from './login-form';
 
 const LoginPage = (props) => {
   const {isAuthorized, onUserDataCheck, email, password, ...restProps} = props
-  const handleSubmit = (e) => {
+  const handleLoginClick = (e) => {
     e.preventDefault();
     onUserDataCheck(email, password)
   }
+
   return (
     isAuthorized 
       ? <Redirect from="/login" to="/"/>
       : <div className={"container"}>
-          <LoginForm onHandleSubmit={handleSubmit} props={restProps}/>
+          <LoginForm
+            onLoginClick={handleLoginClick}
+            props={restProps}/>
         </div>
   )
 }
@@ -33,6 +36,4 @@ let mapStateToProps = (state) => {
 export default connect(mapStateToProps,{
   onUserEmailChange,
   onUserPasswordChange,
-  onUserDataCheck,
-
-})(LoginPage);
+  onUserDataCheck})(LoginPage);
