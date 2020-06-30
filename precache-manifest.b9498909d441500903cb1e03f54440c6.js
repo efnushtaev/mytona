@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d749bb5397d3b2e37fc6c45a1a9d6a1",
+    "revision": "6f9bda6970c94d54a2507b9f4b58c084",
     "url": "/mytona/index.html"
   },
   {
-    "revision": "edd6b9785da2c4b78faa",
+    "revision": "fccca76833bdb104a030",
     "url": "/mytona/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "fd9c609569ef6d3987ec",
-    "url": "/mytona/static/js/2.ff99353e.chunk.js"
+    "revision": "b28e249b2e7fdb7bbd0b",
+    "url": "/mytona/static/js/2.fdf3ab0c.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/mytona/static/js/2.ff99353e.chunk.js.LICENSE.txt"
+    "url": "/mytona/static/js/2.fdf3ab0c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "edd6b9785da2c4b78faa",
-    "url": "/mytona/static/js/main.94f89c30.chunk.js"
+    "revision": "fccca76833bdb104a030",
+    "url": "/mytona/static/js/main.c247baaa.chunk.js"
   },
   {
     "revision": "83cbaea8f6ceab812c4c",

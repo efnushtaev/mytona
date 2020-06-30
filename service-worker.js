@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mytona/precache-manifest.337a24edfbb5319c11816c6cf1fa215f.js"
+  "/mytona/precache-manifest.b9498909d441500903cb1e03f54440c6.js"
 );
 
 self.addEventListener('message', (event) => {
