@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mytona/static/css/main.5f361e03.chunk.css",
-    "main.js": "/mytona/static/js/main.c247baaa.chunk.js",
-    "main.js.map": "/mytona/static/js/main.c247baaa.chunk.js.map",
+    "main.js": "/mytona/static/js/main.9e382a29.chunk.js",
+    "main.js.map": "/mytona/static/js/main.9e382a29.chunk.js.map",
     "runtime-main.js": "/mytona/static/js/runtime-main.b4d58fb2.js",
     "runtime-main.js.map": "/mytona/static/js/runtime-main.b4d58fb2.js.map",
     "static/js/2.fdf3ab0c.chunk.js": "/mytona/static/js/2.fdf3ab0c.chunk.js",
     "static/js/2.fdf3ab0c.chunk.js.map": "/mytona/static/js/2.fdf3ab0c.chunk.js.map",
     "index.html": "/mytona/index.html",
-    "precache-manifest.b9498909d441500903cb1e03f54440c6.js": "/mytona/precache-manifest.b9498909d441500903cb1e03f54440c6.js",
+    "precache-manifest.aa1a790940b939331c93bfacb095570f.js": "/mytona/precache-manifest.aa1a790940b939331c93bfacb095570f.js",
     "service-worker.js": "/mytona/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/mytona/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.fdf3ab0c.chunk.js.LICENSE.txt": "/mytona/static/js/2.fdf3ab0c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b4d58fb2.js",
     "static/js/2.fdf3ab0c.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.c247baaa.chunk.js"
+    "static/js/main.9e382a29.chunk.js"
   ]
 }
